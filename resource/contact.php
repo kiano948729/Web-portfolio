@@ -14,6 +14,9 @@ $current_page = basename($_SERVER['PHP_SELF']);
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/5321476408.js" crossorigin="anonymous"></script>
   <script src="../script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"rel="stylesheet">
 </head>
 
 <body>
@@ -60,7 +63,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
               <label for="message">Bericht:</label>
               <textarea id="message" name="message" rows="5" required></textarea>
             </div>
-            <button type="submit" class="submit-btn">Verstuur</button>
+            <button type="submit" value="Verstuur" class="submit-btn">Verstuur</button>
           </form>
         </section>
       </div>

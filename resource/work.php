@@ -14,6 +14,9 @@ $current_page = basename($_SERVER['PHP_SELF']);
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/5321476408.js" crossorigin="anonymous"></script>
   <script src="../script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"rel="stylesheet">
 </head>
 
 <body>
@@ -248,7 +251,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
               voor meer projecten!
             </p>
             <p>Hieronder kun je de (gedeeltelijke) code zien voor de gehele source code ga naar mijn <a
-                href="https://github.com/kiano948729?tab=repositories&q=&type=&language=&sort=stargazers">GitHub</a>.</p>
+                href="https://github.com/kiano948729?tab=repositories&q=&type=&language=&sort=stargazers">GitHub</a>.
+            </p>
             <p>In de gehele code zijn leuke toevoegingen om het spel leuker en moeilijker te maken.
               Ook krijg je toegang tot het menu zodat je het daadwerklijk zelk kan spelen.</p>
             <button id="toggle-button1" class="button-neuronNetwork">Code</button>

@@ -1,3 +1,7 @@
+* {
+    font-family: "Playfair Display", serif;
+  }
+  
 body {
     background-image: url(../img/achtergronden/image.png);
     background-size: cover;
@@ -791,6 +795,7 @@ hr {
     color: #ffaa00;
 }
 
+
 /* ______________________________________________________________________________________________ */
 /* ______________________________________________________________________________________________ */
 /* Contact Section Styling */
@@ -1189,7 +1194,7 @@ hr {
 
 .slide-up-container {
     width: 98%;
-    height: 300px;
+    height: 350px;
     border: 0.5px solid gray;
     background-color: rgba(14, 16, 24, 0.9);
     display: flex;
@@ -1213,7 +1218,7 @@ hr {
 
 .slide-up-container1 {
     width: 98%;
-    height: 350px;
+    height: 390px;
     border: 0.5px solid gray;
     background-color: rgba(14, 16, 24, 0.9);
     display: flex;
@@ -1238,6 +1243,7 @@ hr {
 .slide-up-boxAlign {
     display: flex;
     flex-direction: row;
+    
 }
 
 .slide-up-boxAlign1 {

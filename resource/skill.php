@@ -14,6 +14,9 @@ $current_page = basename($_SERVER['PHP_SELF']);
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/5321476408.js" crossorigin="anonymous"></script>
   <script src="../script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"rel="stylesheet">
 </head>
 
 <body>
@@ -66,7 +69,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
             <li><i class="fas fa-palette"></i> Frontend: HTML, CSS, JavaScript.</li>
             <li><i class="fas fa-server"></i> Backend: PHP (basisniveau).</li>
             <li><i class="fas fa-cubes"></i> Frameworks: Begrijp de basissen.</li>
-            <li><i class="fas fa-mobile-alt"></i> Design: Het ontwerpen van aantrekkelijke & gebruiksvriendelijke interfaces.</li>
+            <li><i class="fas fa-mobile-alt"></i> Design: Het ontwerpen van aantrekkelijke &<br>gebruiksvriendelijke interfaces.</li>
           </ul>
           <h2>Aanrader</h2>
           <p>Bekijk mijn frontend projecten en designs op <a href="https://github.com/kiano948729"
