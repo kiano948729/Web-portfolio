@@ -15,9 +15,9 @@ $current_page = basename($_SERVER['PHP_SELF']);
             </div>
         </nav>
         <nav class="nav-links">
-            <a href="../resource/about.php" class="<?php echo $current_page == 'about.php' ? 'active' : ''; ?>">skill</a>
+            <a href="../resource/skill.php" class="<?php echo $current_page == 'skill.php' ? 'active' : ''; ?>">skill</a>
             <a href="../resource/work.php" class="<?php echo $current_page == 'work.php' ? 'active' : ''; ?>">Work</a>
-            <a href="../resource/skill.php"class="<?php echo $current_page == 'skill.php' ? 'active' : ''; ?>">About</a>
+            <a href="../resource/about.php"class="<?php echo $current_page == 'about.php' ? 'active' : ''; ?>">About</a>
             <a href="../resource/contact.php"class="<?php echo $current_page == 'contact.php' ? 'active' : ''; ?>">Contact</a>  
             <div id="google_translate_element"></div>
             <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

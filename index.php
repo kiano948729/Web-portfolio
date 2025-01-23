@@ -47,7 +47,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
         <div class="about-main-info">
           <div class="about-foto">
             <!-- nog een ding toevoeven zodat bij iedere andere tab een andere afbeelding komt -->
-            <img src="img/downloads.jpg">
+            <img src="img/personalPhoto/575f0334-de6e-4d60-9013-0a0fd899afca.JPG">
           </div>
           <div id="main" class="tabcontent about-text">            
             <h2>Hi, ik ben Kiano!</h2>
@@ -78,8 +78,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
           </div>
           <div>
             <div class="about-buttons">
-              <a href="resource/about.php" class="<?php echo $current_page == 'about.php' ? 'active' : ''; ?>">About</a>
               <a href="resource/skill.php" class="<?php echo $current_page == 'skill.php' ? 'active' : ''; ?>">skill</a>
+              <a href="resource/about.php" class="<?php echo $current_page == 'about.php' ? 'active' : ''; ?>">about</a>
             </div>
           </div>
         </div>

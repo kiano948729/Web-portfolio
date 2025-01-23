@@ -5,117 +5,257 @@ $current_page = basename($_SERVER['PHP_SELF']);
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/5321476408.js" crossorigin="anonymous"></script>
-  <script src="../script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5321476408.js" crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
 </head>
 
 <body>
-  <header>
-    <?php require_once("../components/header.php") ?>
-  </header>
-  <main>
-    <div class="about-page">
-      <!-- Eerste blok -->
-      <div class="about-first-div about-hover">
-        <div class="image-wrapper">
-          <img src="../gif/neuron.gif" alt="Neural Network">
-          <h1 class="h1-about">Neural Network</h1>
-          <div class="arrow">
-            ↑ Hover here ↑
-          </div>
-        </div>
-        <div class="info">
-          <h2>Status</h2>
-          <p>Redelijk nieuw in neurale netwerken, maar de basis begrijp ik. Ik heb experimenten uitgevoerd met
-            eenvoudige modellen in Python.</p>
-          <h2>Basisconcepten</h2>
-          <ul>
-            <li><i class="fas fa-brain"></i> Neuronen: De bouwstenen van neurale netwerken.</li>
-            <li><i class="fas fa-layer-group"></i> Lagen: Input, hidden en output lagen.</li>
-            <li><i class="fas fa-chart-line"></i> Activatiefuncties: Zoals ReLU en Sigmoid.</li>
-            <li><i class="fas fa-cog"></i> Training: Gebruik van backpropagation en gradient descent.</li>
-          </ul>
-          <h2>Aanrader</h2>
-          <p>Bekijk mijn GitHub-repository's voor eenvoudige implementaties van neurale netwerken: <a
-              href="https://github.com/kiano948729" target="_blank">github.com/kiano</a>.</p>
-        </div>
-      </div>
+    <header>
+        <?php require_once("../components/header.php") ?>
+    </header>
+    <!-- Introductie met een sterke visual impact -->
+    <main class="about-page-body">
+        <div class="about-page-main">
 
-      <!-- Tweede blok -->
-      <div class="about-second-div about-hover">
-        <div class="image-wrapper">
-          <img src="../gif/ezgif-3-0d8e20d024.webp" alt="Web Development">
-          <h1 class="h1-about">Web Development</h1>
-          <div class="arrow">
-            ↑ Hover here ↑
-          </div>
-        </div>
-        <div class="info">
-          <h2>Ervaring</h2>
-          <p>Ik heb een sterk gevoel voor design en ben ervaren in frontend webontwikkeling. Mijn expertise ligt
-            voornamelijk in het bouwen van moderne, responsieve interfaces.</p>
-          <h2>Vaardigheden</h2>
-          <ul>
-            <li><i class="fas fa-palette"></i> Frontend: HTML, CSS, JavaScript.</li>
-            <li><i class="fas fa-server"></i> Backend: PHP (basisniveau).</li>
-            <li><i class="fas fa-cubes"></i> Frameworks: Begrijp de basissen.</li>
-            <li><i class="fas fa-mobile-alt"></i> Design: Het ontwerpen van aantrekkelijke en gebruiksvriendelijke
-              interfaces.</li>
-          </ul>
-          <h2>Aanrader</h2>
-          <p>Bekijk mijn frontend projecten en designs op <a href="https://github.com/kiano948729"
-              target="_blank">GitHub</a>.</p>
-        </div>
-      </div>
+            <div class="about-page-div">
+                <div class="about-div-number">
+                    <p>01</p>
+                    <p>__</p>
+                </div>
+                <div class="about-div-title">
+                    <h1 class="about-div-h1">PASSIE</h1>
+                </div>
+                <div class="about-div-postion">
+                    <i class="fa-solid fa-heart-circle-check" style="color: #FFD43B;"></i>
+                    <p class="about-div-p">Ik ben
+                        een
+                        sportieve persoon die graag sporten beoefent Beweging geeft me energie en helpt me zowel fysiek
+                        als mentaal in balans te blijven.</p>
+                </div>
+                <div class="about-div-button">
+                    <div class="about-div-media">
+                        <button><i class="fa-solid fa-person-walking" style="color: #FFD43B;"></i>Basics</button>
+                        <button><i class="fa-solid fa-person-running" style="color: #FFD43B;"></i>Sport</button>
+                    </div>
+                    <div>
+                        <button><i class="fa-solid fa-dumbbell" style="color: #FFD43B;"></i>Kracht</button>
+                    </div>
+                </div>
+                <div class="about-div-arrow">
+                    <button id="toggle-slide-up" class="about-div-button-more">
+                        <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div id="slideUpContent" class="slide-up-container">
+                <div class="slide-up-div">
+                    <div class="slide-up-boxAlign">
+                        <div class="slide-up-box">
+                            <h2>Passie</h2>
+                            <p>
+                                Als een enthousiast en actief persoon voel ik me aangetrokken tot activiteiten die zowel
+                                mijn
+                                lichaam als mijn
+                                geest uitdagen. Hier zijn een paar van mijn favoriete bezigheden:
+                            </p>
+                        </div>
+                        <div class="slide-up-box">
+                            <h2>Sporten<i class="fas fa-dumbbell"></i></h2>
+                            <p> Het opbouwen van kracht en conditie geeft me niet alleen
+                                fysieke
+                                energie, maar scherpt ook mijn mentale focus. Ik geniet van het doorbreken van mijn
+                                eigen
+                                grenzen en het gevoel van voldoening na elke workout.
+                            </p>
+                        </div>
+                        <div class="slide-up-box">
+                            <h2>Hiken & Wildkamperen <i class="fas fa-hiking"></i></h2>
+                            <p>De natuur biedt mij rust en avontuur
+                                tegelijk.
+                                Wandelen door prachtige landschappen en slapen onder de sterrenhemel inspireert mij
+                                en
+                                geeft
+                                me de kans om echt te ontsnappen aan de dagelijkse drukte. Het versterkt mijn
+                                connectie
+                                met
+                                de wereld om me heen.</p>
+                        </div>
+                        <div class="slide-up-box">
+                            <h2>Gamen<i class="fas fa-gamepad"></i></h2>
+                            <p>Gamen Voor mij is gamen meer dan een hobby - het is een
+                                creatieve
+                                uitlaatklep. Of het nu gaat om strategisch denken of samenwerken in teams, ik
+                                gebruik
+                                gamen
+                                om mijn probleemoplossend vermogen en reflexen scherp te houden.</p>
+                        </div>
+                    </div>
+                    <div class="slide-up-box-photo">
+                        <img src="../img/personalPhoto/IMG_7710.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="about-page-div">
+                <div class="about-div-number">
+                    <p>02</p>
+                    <p>__</p>
+                </div>
+                <div class="about-div-title">
+                    <h1 class="about-div-h1">KIANO</h1>
+                </div>
+                <div class="about-div-postion">
+                    <i class="fa-solid fa-user-graduate" style="color: #FFD43B;"></i>
+                    <p class="about-div-p">Ik ben een rustig persoon, iemand die kalmte uitstraalt en graag een
+                        evenwichtige omgeving creëert.</p>
+                </div>
+                <div class="about-div-button">
+                    <div class="about-div-media">
+                        <button><i class="fa-solid fa-earth-americas" style="color: #FFD43B;"></i>Ik</button>
+                        <button><i class="fa-solid fa-house-laptop" style="color: #FFD43B;"></i>Doel</button>
+                    </div>
+                    <div>
+                        <button><i class="fa-solid fa-truck-fast" style="color: #FFD43B;"></i>Drijf</button>
+                    </div>
+                </div>
+                <div class="about-div-arrow">
+                    <button id="toggle-slide-up1" class="about-div-button-more">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="slideUpContent1" class="slide-up-container1">
+                <div class="slide-up-div">
+                    <div class="slide-up-boxAlign">
+                        <div class="slide-up-box">
+                            <h2>Over Mij</h2>
+                            <p>
+                                Mijn naam is Kiano Klootwijk, en ik sta bekend als een rustig en kalm persoon. Ik hou
+                                van
+                                eenvoud en
+                                een
+                                evenwichtige omgeving waarin ik mezelf volledig kan zijn. Rust is een belangrijk aspect
+                                van
+                                mijn
+                                persoonlijkheid;
+                                het helpt me om gefocust te blijven en mijn creativiteit de ruimte te geven. Hoewel ik
+                                van
+                                nature
+                                iemand ben die
+                                graag tijd alleen doorbrengt, betekent dit niet dat ik mij afsluit van de wereld om mij
+                                heen.
+                            </p>
+                        </div>
+                        <div class="slide-up-box">
+                            <h2>Persoonlijke Kwaliteiten <i class="fas fa-user"></i></h2>
+                            <p>Een van mijn sterke kanten is mijn vermogen om zelfstandig te werken. Ik voel me op mijn
+                                gemak
+                                wanneer ik in alle rust aan mijn taken kan werken, en ik weet hoe ik mijn eigen
+                                structuur moet
+                                creëren. Tegelijkertijd weet ik mijn kalmte en analytisch vermogen te combineren met
+                                effectieve
+                                communicatie in samenwerkingen.</p>
+                        </div>
+                        <div class="slide-up-box">
+                            <h2>Zelfreflectie en Balans <i class="fas fa-balance-scale"></i></h2>
+                            <p>Doordat ik veel tijd besteed aan reflecteren en nadenken, weet ik goed wat mijn doelen
+                                zijn en
+                                waar ik gelukkig van word. Ik hecht veel waarde aan balans - tussen werk en ontspanning,
+                                actie
+                                en rust, solo-activiteiten en teamwork.</p>
+                        </div>
+                        <div class="slide-up-box">
+                            <h2>Samenwerken of Alleen Werken <i class="fas fa-users"></i></h2>
+                            <p>Als rustige persoonlijkheid geniet ik van taken waarin ik me volledig kan onderdompelen
+                                zonder
+                                afleidingen. Toch zie ik samenwerken als een kans om te leren van anderen en
+                                gezamenlijke
+                                successen te behalen. Mijn kalme karakter brengt stabiliteit en geduld naar elk team
+                                waarin ik
+                                werk.</p>
+                        </div>
+                        <div class="slide-up-box">
+                            <h2>Mijn Missie <i class="fas fa-flag-checkered"></i></h2>
+                            <p>Als individu streef ik ernaar om altijd in balans te blijven: gefocust, reflectief en
+                                doelgericht.
+                                Of ik nu alleen aan iets werk of deel uitmaak van een groter geheel, mijn rustige en
+                                betrouwbare
+                                aard helpt me om anderen te inspireren en te motiveren.</p>
+                        </div>
+                    </div>
+                    <div class="slide-up-box-photo">
+                        <img src="../img/personalPhoto/IMG_8160.PNG">
+                    </div>
+                </div>
+            </div>
 
-      <!-- Derde blok -->
-      <div class="about-third-div about-hover">
-        <div class="image-wrapper">
-          <div class="logo-position">
-            <div class="logo-layout">
-              <img src="../gif/5968286.png">
+            <div class="about-page-div">
+                <div class="about-div-number">
+                    <p>03</p>
+                    <p>__</p>
+                </div>
+                <div class="about-div-title">
+                    <h1 class="about-div-h1">GROEI</h1>
+                </div>
+                <div class="about-div-postion">
+                    <i class="fa-solid fa-tree" style="color: #FFD43B;"></i>
+                    <p class="about-div-p">Ik ben iemand die waarde hecht aan groei, zowel op professioneel als
+                        persoonlijk vlak.</p>
+                </div>
+                <div class="about-div-button">
+                    <div class="about-div-media">
+                        <button><i class="fa-brands fa-pagelines" style="color: #FFD43B;"></i>Waarom</button>
+                        <button><i class="fa-solid fa-briefcase" style="color: #FFD43B;"></i>Ervaring</button>
+                    </div>
+                    <div>
+                        <button><i class="fa-solid fa-square-person-confined"
+                                style="color: #FFD43B;"></i>Persoonlijk</button>
+                    </div>
+                </div>
+                <div class="about-div-arrow">
+                    <button id="toggle-slide-up2" class="about-div-button-more">
+                        <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
             </div>
-            <div class="logo-layout-second">
-              <img src="../gif/Schermafbeelding 2024-12-18 111605.png">
-              <img src="../gif/Schermafbeelding 2024-12-18 111904.png" alt="">
+            <div id="slideUpContent2" class="slide-up-container">
+                <div class="slide-up-div">
+                    <div class="slide-up-boxAlign1">
+                        <div class="slide-up-box1">
+                            <h2>Groei</h2>
+                            <p>
+                                Ik ben iemand die veel waarde hecht aan groei, zowel op professioneel als persoonlijk
+                                vlak.
+                                Voor mij
+                                is elke dag
+                                een kans om te leren en mezelf te verbeteren. Ik streef ernaar om nieuwe vaardigheden te
+                                ontwikkelen
+                                en uit mijn
+                                comfortzone te stappen, omdat ik geloof dat groei ontstaat waar uitdagingen liggen. Niet
+                                alleen in
+                                mijn werk, maar
+                                ook in mijn persoonlijke leven zoek ik naar manieren om sterker, wijzer en veelzijdiger
+                                te
+                                worden.
+                                Groei betekent
+                                voor mij niet alleen vooruitgang boeken, maar ook stilstaan bij wat écht belangrijk is
+                                en
+                                dat met
+                                zorg ontwikkelen.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-up-box-photo">
+                        <img src="../img/personalPhoto/IMG_7724.jpg">
+                    </div>
+                </div>
             </div>
-            <div class="logo-layout">
-              <img src="../gif/Schermafbeelding 2024-12-18 112137.png">
-            </div>
-            <h1 class="h1-about1">Programming</h1>
-            <div class="arrow">
-              ↑ Hover here ↑
-            </div>
-          </div>
         </div>
-        <div class="info">
-          <h2>Ervaring</h2>
-          <p>Ik beheers meerdere programmeertalen op een goed niveau en kan werken met OOP. Daarnaast ben ik vertrouwd
-            met het ontwikkelen van efficiënte algoritmes.</p>
-          <h2>Talen</h2>
-          <ul>
-            <li><i class="fab fa-windows"></i> C#: Object-georiënteerd programmeren.</li>
-            <li><i class="fab fa-python"></i> Python: Data analyse en machine learning.</li>
-            <li><i class="fab fa-java"></i> Java: Applicatie ontwikkeling.</li>
-            <li><i class="fas fa-database"></i> SQL: Database management.</li>
-          </ul>
-          <h2>Aanrader</h2>
-          <p>Bekijk mijn GitHub voor codevoorbeelden en projecten: <a href="https://github.com/kiano948729"
-              target="_blank">github.com/kiano</a>.</p>
-        </div>
-      </div>
-    </div>
-  </main>
-  <footer>
-
-  </footer>
+    </main>
 </body>
 
 </html>
