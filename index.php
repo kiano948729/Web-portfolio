@@ -76,8 +76,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
         </div>
         <div class="about-main2-info">
           <div class="about-first-block">
-            <p>In mijn vrije tijd programmeer ik graag aan neurale AI-projecten en verdiep ik me in traden. Het
-              ontdekken en leren van nieuwe dingen is mijn passie!</p>
+            <p>In mijn vrije tijd programmeer ik graag aan neurale AI-projecten en verdiep ik me in traden.</p>
           </div>
           <div>
             <div class="about-buttons">
